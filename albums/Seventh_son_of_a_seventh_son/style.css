@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body
+{
+    font-family: 'Lato', sans-serif;
+    background-color: #1f1f1f;
+    color: white;
+    display: flex;
+    margin-bottom: 4vw;
+}
+
+#sidebar
+{
+    left: 0;
+    background-color: #151515;
+    width: 20vw;
+    padding: 2vh;
+    height: auto;
+}
+
+#logo_div
+{
+    text-decoration: dotted;
+    color: white;
+    width: 12vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo
+{
+    width: 5vw;
+}
+
+main
+{
+    margin: 5vh;
+}
+
+footer
+{
+    border-top: 1px solid #333;
+    width: 100vw;
+    bottom: 0;
+    position: fixed;
+    background-color: #252525;
+    margin-right: 20vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#albums
+{
+    display: flex;
+    column-gap: 5vw;
+    margin-top: 1vw;
+}
+
+.album
+{
+    height: 18vw;
+    width: 15vw;
+    background-color: #222;
+    border-radius: 0.5vw;
+    padding-left: 1.5vw;
+    padding-top: 1.5vw;
+    font-size: 24px;
+    transition-duration: .2s;
+}
+
+.album:hover
+{
+    cursor: pointer;
+    background-color: #242424;
+}
+
+#cover
+{
+    width: 15vw;
+    height: 15vw;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+header
+{
+    display: flex;
+    align-items: center;
+    column-gap: 2vw;
+}
+
+#labels
+{
+    height: 10vw;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#smaller_labels
+{
+    display: flex;
+    width: 18vw;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#songs
+{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.song
+{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    padding: 2vh;
+    border-radius: 5px;
+}
+
+.left
+{
+    height: 5vh;
+    display: flex;
+
+}
+
+.song_number
+{
+    display: grid;
+    place-items: center;
+    width: 2vw;
+}
+
+.song_info
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.song_title
+{
+    display: flex;
+    align-items: center;
+    height: 2.5vh;
+}
+
+.song_author
+{
+    display: flex;
+    align-items: center;
+    height: 2.5vh;
+}
+
+.right
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.download
+{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    margin-right: 2vw;
+    font-size: 24px;
+    background: url('../../img/download.png');
+    border: 2px solid white;
+    display: grid;
+    place-items: center;
+}
+
+#download_img
+{
+    border-radius: 50%;
+    width: 1vw;
+    height: 1vw;
+    
+}
+
+.song:hover
+{
+    background-color: #333;
+    cursor: pointer;
+}
+
+#control
+{
+    background-color: white; width: 4vh; height: 4vh;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
+}
+
+
+#play
+{
+    
+    width: 2vh;
+    height: 2vh;
+    background-color: white;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.play_child
+{
+    height: 2vh;
+    width: 0.66vh;
+    background-color: black;
+}
+
+#pause
+{
+    width: 2vh;
+    height: 2vh;
+    border-top: solid white 1vh;
+    border-bottom: solid white 1vh;
+    border-left: solid black 2vh;
+    margin-left: 0.5vh;
+    transition-duration: .2s;
+}
+
+#outside
+{
+    background-color: white;
+    border-radius: 10px;
+    width: 600px;
+    height: 5px;
+}
+#inside
+{
+    background-color: #1E70D7;
+    height: 5px;
+    width: 0;
+}
+
+#bar
+{
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#controls
+{
+    width: 10vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 6vh;
+    column-gap: 0;
+}
+
+#prev
+{
+    width: 2.5vh;
+    height: 2vh;
+    display: flex;
+}
+
+#next
+{
+    width: 2.5vh;
+    height: 2vh;
+    display: flex;
+}
+
+#prev:hover
+{
+    cursor: pointer;
+}
+
+#next:hover
+{
+    cursor: pointer;
+}
+
+.rect
+{
+    height: 2vh;
+    width: .5vh;
+    background-color: whitesmoke;
+    position: absolute;
+}
+
+#triangle_prev
+{
+    width: 2vh;
+    height: 2vh;
+    border-top: solid #252525 1vh;
+    border-bottom: solid #252525 1vh;
+    border-right: solid whitesmoke 2vh;
+}
+
+#triangle_next
+{
+    width: 2vh;
+    height: 2vh;
+    border-top: solid #252525 1vh;
+    border-bottom: solid #252525 1vh;
+    border-left: solid whitesmoke 2vh;
+}
+
+.right_rect{
+    margin-left: 1.5vh;
+    width: .5vh;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+#house
+{
+    width: 5vw;
+}
+
+#logo_div
+{
+    text-decoration: dotted;
+    color: white;
+    width: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#current_song_bar
+{
+    position: absolute;
+    margin-right: 77vw;
+    margin-top: 2.5vh;
+    height: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    width: 20vw;
+}
