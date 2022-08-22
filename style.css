@@ -14,7 +14,6 @@ body
     left: 0;
     background-color: #151515;
     width: 20vw;
-    height: 92vh;
     padding: 2vh;
 }
 
@@ -45,8 +44,9 @@ footer
 
 #albums
 {
-    display: flex;
-    column-gap: 5vw;
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw;
+    gap: 5vw;
     margin-top: 1vw;
 }
 
@@ -117,4 +117,32 @@ a
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (max-width: 1300px)
+{
+    #sidebar
+    {
+        display: none;
+    }
+    #albums
+    {
+        grid-template-columns: 30vw 30vw;
+    }
+    .album
+    {
+        height: 40vw;
+        width: 30vw;
+        border-radius: 1vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-top: 3vw;
+        font-size: 24px;
+    }
+
+    .cover
+    {
+        height: 24vw;
+        width: 24vw;
+    }
 }
