@@ -9,6 +9,12 @@
        color: white;
        display: flex;
        margin-bottom: 4vw;
+       min-width: 665px;
+   }
+
+   #header_download
+   {
+        width: 1.5vw; height: 1.5vw;
    }
    
    #sidebar
@@ -104,7 +110,7 @@
    #smaller_labels
 {
     display: flex;
-    width: 18vw;
+    width: 20em;
     height: 5vh;
     align-items: center;
     justify-content: space-between;
@@ -184,8 +190,8 @@
    #download_img
    {
        border-radius: 50%;
-       width: 1vw;
-       height: 1vw;
+       width: 50%;
+       height: 50%;
        
    }
    
@@ -197,12 +203,15 @@
    
    #control
    {
-       background-color: white; width: 4vh; height: 4vh;
+       background-color: white; 
+       width: 4vh; 
+       height: 4vh;
        border-radius: 50%;
        display: grid;
        place-items: center;
        margin-top: 1vh;
        margin-bottom: 1.5vh;
+       margin-right: .5vw;
    }
    
    
@@ -259,12 +268,14 @@
    
    #controls
    {
+        
        width: 10vw;
        display: flex;
        justify-content: space-around;
        align-items: center;
        height: 6vh;
        column-gap: 0;
+       margin-top: -4vh;
    }
    
    #prev
@@ -272,6 +283,7 @@
        width: 2.5vh;
        height: 2vh;
        display: flex;
+       margin-right: 1vw;
    }
    
    #next
@@ -279,6 +291,7 @@
        width: 2.5vh;
        height: 2vh;
        display: flex;
+       margin-left: 1vw;
    }
    
    #prev:hover
@@ -334,10 +347,6 @@
        position: absolute;
        margin-right: 77vw;
        margin-top: 2.5vh;
-       height: 4vh;
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
        text-align: left;
        width: 20vw;
    }
@@ -356,3 +365,64 @@
        justify-content: space-between;
        align-items: center;
    }
+
+#current_song_title
+{
+    margin-right: 70vw;
+    margin-top: 2vh;
+    width: 400px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1300px)
+{
+    #sidebar
+    {
+        display: none;
+    }
+    .song
+    {
+        width: 90vw;
+    }
+    #cover
+    {
+        width: 25vw;
+        height: 25vw;
+    }
+    .song_number
+   {
+       margin-right: 2vw;
+   }
+   .download
+   {
+        width: 4vw;
+        height: 4vw;
+   }  
+   .song
+   {
+        height: 10vh;
+   }
+   #control
+   {
+        width: 40px;
+        height: 40px;
+   }
+   #header_download
+   {
+        width: 40px;
+        height: 40px;
+   }
+   #controls
+   {
+        margin-left: 480px;
+        width: 15vw;
+   }
+   #current_song_title
+    {
+        margin-right: 295px;
+    }
+    footer
+    {
+        padding-top: 1.35em;
+    }
+}
