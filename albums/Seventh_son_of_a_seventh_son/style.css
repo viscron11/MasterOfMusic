@@ -125,11 +125,12 @@
    
    .song
    {
-       display: flex;
-       justify-content: space-between;
-       width: 70vw;
-       padding: 2vh;
-       border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        width: 70vw;
+        padding: 2vh;
+        border-radius: 5px;
+        align-items: center;
    }
    
    .left
@@ -405,7 +406,8 @@
    }  
    .song
    {
-        height: 10vh;
+        height: 15vh;
+        
    }
    #control
    {
