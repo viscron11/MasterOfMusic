@@ -60,6 +60,7 @@ for(let i = 0; i < songs.length; i++)
        songs[i].onclick = function()
        {
            clicks++;
+           document.querySelector("footer").style.paddingTop = "0";
            currentSong = i;
            inside.style.width = "0";
            clearInterval(timer);
@@ -83,7 +84,7 @@ for(let i = 0; i < songs.length; i++)
            document.getElementById("current_length").innerText = time.join("");
 
            document.getElementById("current_song_title").innerText = song_titles[currentSong].innerHTML;
-           document.getElementById("current_song_author").innerText = author;
+            
    
                timer = setInterval(function () {
                    j++;
@@ -116,7 +117,7 @@ for(let i = 0; i < songs.length; i++)
                            else time.push(`${Math.floor(k/60)}:0${k-(60*Math.floor(k/60))}`);
                            document.getElementById("current_length").innerText = time.join("");
                            document.getElementById("current_song_title").innerText = song_titles[currentSong].innerHTML;
-                           document.getElementById("current_song_author").innerText = author;
+                            
                        
                        
                    }
@@ -237,7 +238,7 @@ for(let i = 0; i < songs.length; i++)
        player.play();
        clearInterval(timer);
        document.getElementById("current_song_title").innerText = song_titles[currentSong].innerHTML;
-           document.getElementById("current_song_author").innerText = author;
+            
    
        timer = setInterval(function () {
            j++;
@@ -271,7 +272,7 @@ for(let i = 0; i < songs.length; i++)
                    document.getElementById("current_length").innerText = time.join("");
                    player.play();
                    document.getElementById("current_song_title").innerText = song_titles[currentSong].innerHTML;
-           document.getElementById("current_song_author").innerText = author;
+            
            }
        }, 990)
    }
@@ -298,7 +299,7 @@ for(let i = 0; i < songs.length; i++)
        player.play();
        clearInterval(timer);
        document.getElementById("current_song_title").innerText = song_titles[currentSong].innerHTML;
-           document.getElementById("current_song_author").innerText = author;
+            
    
        timer = setInterval(function () {
            j++;
@@ -332,7 +333,7 @@ for(let i = 0; i < songs.length; i++)
                    document.getElementById("current_length").innerText = time.join("");
                    player.play();
                    document.getElementById("current_song_title").innerText = song_titles[currentSong].innerHTML;
-           document.getElementById("current_song_author").innerText = author;
+            
            }
        }, 990)
    }
